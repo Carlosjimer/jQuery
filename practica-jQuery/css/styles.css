@@ -1,0 +1,10 @@
+body{
+    background:url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+main{
+    background: white;
+    margin:0px auto;
+    width: 85%;
+    padding: 3%;
+}
