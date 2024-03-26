@@ -8,49 +8,64 @@ body{
     font-family: 'Verdana','Arial';
 }
 main{
+    display: flex;
+    flex-flow: column;
     background: white;
     margin:0px auto;
     margin-top: 2em;
     width: 85%;
     padding: 2em;
 }
-#logo{
-    background: #235E3D;
-    color:white;
-    font-size: 3em;
-    padding: .2em;
-    text-align: center;
-}
-#menu{
-    margin: .8em 0;
-    font-family: Helvetica, Arial;
-    background: #333;
-    & ul{
-        line-height: 3em;
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        transition: all 300ms;
-        & li{
-            height: 3em;
-            & :hover{
-                background: #235E3D;
+#header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    #logo{
+        background: green;
+        width: 100%;
+        text-align: center;
+        line-height: 2em;
+    }
+    #menu{
+        width: 100%;
+        background: #333;
+        margin: 1em 0;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            li{
+                a{line-height: 3em;
+                    text-decoration: none;
+                    color: white;
+                    padding: .85em;
+                }
+                :hover{
+                    background: green;
+                }
             }
-            & a{
-                padding:.9em;
-                color:white;
-                text-decoration: none;
-            }
+        };
+    }
 
+}
+#slider{
+}
+#content{
+    display: flex;
+    #posts{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .post{
         }
+    }    
+    #sidebar{
+        width: 27%;
     }
 }
-#posts{
-    width: 60%;
-    font-family: Helvetica, Arial;
+#caracol{
+    width: 100%;;
 }
-.post{
-    h2{
-        font-size:2em;
-    }
+footer{
 }
